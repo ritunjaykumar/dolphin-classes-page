@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dolphin Classes helps schools, tuition centres and coaching institutes manage classes, students, teachers, fees and learning in one place." />
-  <title>Dolphin Classes | Manage Your Institute Smarter</title>
+  <meta name="description" content="Dolphin Classes is in development: a simpler way for schools, tuition centres and coaching institutes to manage everyday work. Coming soon." />
+  <meta name="theme-color" content="#f7f8f3" />
+  <title>Dolphin Classes | Coming Soon</title>
   <style>
     :root {
       --primary: #35618e;
@@ -155,6 +156,122 @@
       .floating-note { right: 0; }
       .footer-links { flex-wrap: wrap; }
     }
+    :root {
+      --primary: #087f72;
+      --primary-dark: #075e56;
+      --primary-light: #e4f4ef;
+      --ink: #17343a;
+      --muted: #647779;
+      --line: #e2e9e3;
+      --surface: #fff;
+      --soft: #f7f8f3;
+      --accent: #f2b36d;
+      --radius: 20px;
+      --shadow: 0 20px 55px rgba(23, 52, 58, .12);
+    }
+    body { background: var(--soft); }
+    .container { width: min(1160px, calc(100% - 48px)); }
+    .topbar { background: rgba(247,248,243,.92); border-color: #e7ece5; }
+    .nav { height: 78px; }
+    .brand { gap: 12px; color: var(--ink); }
+    .brand-mark { background: var(--primary); box-shadow: 0 8px 18px #087f7230; }
+    .brand small { letter-spacing: 1.7px; }
+    .nav-links { gap: 34px; color: #536868; }
+    .btn { min-height: 48px; padding: 13px 20px; border-radius: 999px; }
+    .btn:hover { background: var(--primary-dark); box-shadow: 0 9px 22px #087f7230; }
+    .btn-outline { background: transparent; border-color: #c9d6ce; color: var(--ink); }
+    .btn-outline:hover { background: #edf4ef; border-color: #b7c9bd; color: var(--ink); box-shadow: none; }
+    .hero {
+      padding: 88px 0 96px;
+      background:
+        radial-gradient(ellipse at 83% 34%, rgba(201,232,218,.65), transparent 34%),
+        radial-gradient(ellipse at 0 100%, rgba(245,221,186,.3), transparent 33%),
+        var(--soft);
+    }
+    .hero-grid { grid-template-columns: 1fr .95fr; gap: 64px; }
+    .eyebrow { gap: 9px; padding: 8px 13px; background: #fff4e5; color: #8c5a21; letter-spacing: .8px; }
+    .eyebrow span { background: #e8a34c; box-shadow: 0 0 0 4px #f7e7d2; }
+    h1 { margin: 22px 0 20px; max-width: 620px; font-size: clamp(44px, 5.5vw, 68px); line-height: 1.04; letter-spacing: -3.4px; }
+    h1 em { color: var(--primary); }
+    .hero-copy { max-width: 540px; margin-bottom: 30px; font-size: 17px; line-height: 1.75; }
+    .hero-actions { gap: 12px; }
+    .hero-actions .btn:first-child { box-shadow: 0 10px 24px #087f7228; }
+    .trust { gap: 11px; margin-top: 28px; font-size: 13px; }
+    .trust-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: #e4f4ef; color: var(--primary); font-size: 17px; }
+    .dashboard-wrap { padding: 8px 18px 22px 0; }
+    .dashboard {
+      padding: 0; overflow: hidden; border: 1px solid #e3e9e2; border-radius: 24px;
+      background: #fff; box-shadow: 0 30px 75px rgba(23,52,58,.14); transform: rotate(1deg);
+    }
+    .preview-top { display: flex; align-items: center; justify-content: space-between; padding: 17px 20px; border-bottom: 1px solid #edf0ec; }
+    .preview-brand { display: flex; align-items: center; gap: 9px; font-size: 12px; font-weight: 800; letter-spacing: -.2px; }
+    .preview-brand-mark { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 9px; background: var(--primary); color: #fff; font-size: 15px; }
+    .preview-label { color: #8b9690; font-size: 10px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; }
+    .preview-content { padding: 22px; }
+    .preview-heading { margin: 0 0 4px; font-size: 18px; letter-spacing: -.4px; }
+    .preview-description { margin: 0 0 18px; color: #84908b; font-size: 11px; }
+    .preview-list { display: grid; gap: 10px; }
+    .preview-item { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #edf0ec; border-radius: 13px; background: #fff; }
+    .preview-icon { width: 37px; height: 37px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 11px; background: #e9f5ef; font-size: 17px; }
+    .preview-item:nth-child(2) .preview-icon { background: #fff3e4; }
+    .preview-item:nth-child(3) .preview-icon { background: #eef0fb; }
+    .preview-item strong { display: block; font-size: 11px; }
+    .preview-item small { color: #8b9690; font-size: 10px; }
+    .preview-item .preview-check { margin-left: auto; color: #90a099; font-size: 10px; }
+    .preview-footer { display: flex; align-items: center; gap: 9px; margin-top: 17px; padding: 12px 14px; border-radius: 12px; background: #f5f8f4; color: #667771; font-size: 10px; }
+    .preview-footer span:first-child { color: var(--primary); font-size: 15px; }
+    .floating-note { right: -9px; bottom: 0; padding: 13px 16px; border-color: #e7ebe4; border-radius: 14px; font-size: 11px; }
+    .floating-note strong { color: var(--primary); font-size: 13px; }
+    section { padding: 88px 0; }
+    #features { background: #fff; }
+    .section-head { margin-bottom: 40px; }
+    .section-kicker { color: var(--primary); letter-spacing: 1.4px; }
+    h2 { letter-spacing: -1.5px; }
+    .section-head p { color: var(--muted); line-height: 1.75; }
+    .feature-grid { gap: 16px; }
+    .feature-card { min-height: 205px; padding: 25px; border-color: #e8ede7; border-radius: 17px; }
+    .feature-card:hover { border-color: #cde2d6; box-shadow: 0 16px 38px rgba(23,52,58,.08); }
+    .feature-icon { border-radius: 13px; background: #e8f4ee; }
+    .feature-card h3 { margin-top: 18px; }
+    .feature-card p { color: var(--muted); line-height: 1.7; }
+    .cta { padding: 70px 0; background: #143b3c; }
+    .cta-inner { align-items: center; }
+    .cta h2 { max-width: 650px; }
+    .cta p { max-width: 620px; line-height: 1.7; }
+    .cta .btn { color: #143b3c; }
+    footer { background: #102f31; }
+    .footer-links a:hover { color: #fff; }
+    .menu-toggle { border-radius: 10px; }
+    :focus-visible { outline: 3px solid #e8a34c; outline-offset: 3px; }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+      .dashboard-wrap { max-width: 560px; }
+    }
+    @media (max-width: 700px) {
+      .container { width: min(100% - 36px, 1160px); }
+      .nav { height: 70px; }
+      .nav-links { top: 70px; }
+      .hero { padding: 66px 0 76px; }
+      .hero-grid { gap: 42px; }
+      h1 { letter-spacing: -2.4px; }
+      section { padding: 70px 0; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .feature-card { min-height: auto; }
+      .cta-inner, .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 420px) {
+      .container { width: min(100% - 30px, 1160px); }
+      .hero-actions .btn { width: 100%; }
+      .dashboard-wrap { padding-right: 5px; }
+      .dashboard { transform: none; }
+      .preview-top { padding: 14px; }
+      .preview-content { padding: 16px; }
+      .floating-note { right: 4px; bottom: -7px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
   </style>
 </head>
 <body>
@@ -167,8 +284,6 @@
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <nav class="nav-links" id="navLinks">
         <a href="#features">Features</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#who-its-for">Who it's for</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -178,43 +293,37 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow"><span></span> A smarter way to run your institute</div>
-          <h1>Spend less time managing. <em>More time teaching.</em></h1>
-          <p class="hero-copy">Dolphin Classes brings your institute's everyday work together — from student and teacher management to classes, courses, fees and academic progress.</p>
+          <div class="eyebrow"><span></span> In development · Coming soon</div>
+          <h1>A better way to run <em>your classes.</em></h1>
+          <p class="hero-copy">We’re building Dolphin Classes to bring student records, batches, fees and learning tools together in one simple workspace. The app is still in progress, and we can’t wait to share it with you.</p>
           <div class="hero-actions">
-            <a class="btn" href="mailto:dolphinclasses7@gmail.com">Email us <span>→</span></a>
-            <a class="btn btn-outline" href="#features">Explore features</a>
+            <a class="btn" href="mailto:dolphinclasses7@gmail.com?subject=Dolphin%20Classes%20launch%20updates">Get launch updates <span>→</span></a>
+            <a class="btn btn-outline" href="#features">See what’s coming</a>
           </div>
           <div class="trust">
-            <div class="avatars"><span>👩‍🏫</span><span>👨‍🎓</span><span>📚</span></div>
-            <span>Designed for schools, tuition centres<br />and coaching institutes</span>
+            <span class="trust-mark">✦</span>
+            <span>For schools, tuition centres<br />and coaching institutes</span>
           </div>
         </div>
 
-        <div class="dashboard-wrap" aria-label="Illustrative institute dashboard preview">
+        <div class="dashboard-wrap" aria-label="Concept preview of the Dolphin Classes app">
           <div class="dashboard">
-            <div class="dash-top">
-              <div><div class="dash-title">Institute overview</div><div class="dash-sub">Your institute at a glance</div></div>
-              <span class="dash-pill">● Live overview</span>
+            <div class="preview-top">
+              <div class="preview-brand"><span class="preview-brand-mark">🐬</span> Dolphin Classes</div>
+              <span class="preview-label">Product preview</span>
             </div>
-            <div class="stats">
-              <div class="stat"><label>Total institutes registered</label><strong>1,248</strong><small>Institutes registered</small></div>
-              <div class="stat"><label>Active institutes</label><strong>1,196</strong><small>Currently operating</small></div>
-            </div>
-            <div class="chart-card">
-              <div class="chart-head"><span>Institute registrations</span><span>Last 7 months</span></div>
-              <div class="bars">
-                <div class="bar" style="height:38%"></div><div class="bar" style="height:54%"></div>
-                <div class="bar" style="height:46%"></div><div class="bar" style="height:75%"></div>
-                <div class="bar" style="height:63%"></div><div class="bar" style="height:88%"></div>
-                <div class="bar" style="height:98%"></div>
+            <div class="preview-content">
+              <h2 class="preview-heading">Your institute, organised</h2>
+              <p class="preview-description">A first look at the tools we’re bringing together.</p>
+              <div class="preview-list">
+                <div class="preview-item"><span class="preview-icon">🎓</span><div><strong>Student records</strong><small>Profiles and enrolments</small></div><span class="preview-check">In the works</span></div>
+                <div class="preview-item"><span class="preview-icon">📅</span><div><strong>Classes & batches</strong><small>Schedules and learning groups</small></div><span class="preview-check">In the works</span></div>
+                <div class="preview-item"><span class="preview-icon">📚</span><div><strong>Courses & progress</strong><small>Learning, kept in view</small></div><span class="preview-check">In the works</span></div>
               </div>
-              <div class="chart-labels"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>
+              <div class="preview-footer"><span>✦</span><span>A concept preview — the app is not live yet.</span></div>
             </div>
-            <div class="task-row"><span class="task-icon">🏫</span><div><strong>Institute profiles</strong><small>Institute details in one place</small></div></div>
-            <div class="task-row"><span class="task-icon">✓</span><div><strong>Active institutes</strong><small>Track institute activity</small></div></div>
           </div>
-          <div class="floating-note"><strong>One platform</strong><span>For your institute's daily work</span></div>
+          <div class="floating-note"><strong>Coming soon</strong><span>Made for educators</span></div>
         </div>
       </div>
     </section>
@@ -222,55 +331,26 @@
     <section id="features">
       <div class="container">
         <div class="section-head">
-          <div class="section-kicker">Everything in one place</div>
-          <h2>Tools that keep your institute moving</h2>
-          <p>Bring routine academic and administrative activities into one organised workspace.</p>
+          <div class="section-kicker">What we’re working on</div>
+          <h2>One home for your institute’s everyday work</h2>
+          <p>These are the tools we’re bringing together to make teaching and administration feel simpler.</p>
         </div>
         <div class="feature-grid">
-          <article class="feature-card"><div class="feature-icon">🎓</div><h3>Student management</h3><p>Maintain student profiles, enrolments and academic information with less paperwork.</p></article>
-          <article class="feature-card"><div class="feature-icon">👩‍🏫</div><h3>Teacher management</h3><p>Organise teacher information and make class and subject responsibilities easier to manage.</p></article>
-          <article class="feature-card"><div class="feature-icon">🏫</div><h3>Class & batch management</h3><p>Set up classes, sessions and batches to match the way your institute operates.</p></article>
-          <article class="feature-card"><div class="feature-icon">📚</div><h3>Courses & syllabus</h3><p>Structure courses, subjects, chapters and topics so learning content stays organised.</p></article>
-          <article class="feature-card"><div class="feature-icon">💳</div><h3>Fee management</h3><p>Manage fee structures and keep student fee information easy to review.</p></article>
-          <article class="feature-card"><div class="feature-icon">📝</div><h3>Assignments & exams</h3><p>Support classroom learning with assignment workflows and assessment management.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="workflow" id="how-it-works">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">Simple to get started</div>
-          <h2>From setup to smoother daily operations</h2>
-          <p>Start with the essentials and build a connected digital workspace for your institute.</p>
-        </div>
-        <div class="workflow-grid">
-          <article class="step"><div class="step-number">01</div><h3>Set up your institute</h3><p>Add your institute details, academic structure, teachers and students.</p></article>
-          <article class="step"><div class="step-number">02</div><h3>Organise academics</h3><p>Create classes, sessions, courses and syllabus structures that fit your needs.</p></article>
-          <article class="step"><div class="step-number">03</div><h3>Manage with clarity</h3><p>Use one place to keep track of day-to-day academic and administrative activities.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="who-its-for">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">Made for education</div>
-          <h2>One platform. Different kinds of institutes.</h2>
-          <p>Whether you teach a small batch or manage a growing institution, Dolphin Classes helps bring your operations together.</p>
-        </div>
-        <div class="audience-grid">
-          <article class="audience"><span class="tag">For schools</span><h3>Bring academic administration together</h3><p>Manage students, teachers, classes and syllabus information with a consistent structure.</p></article>
-          <article class="audience"><span class="tag">For tuition & coaching</span><h3>Keep batches and learning organised</h3><p>Handle batches, courses, student records and fee information without scattered spreadsheets.</p></article>
+          <article class="feature-card"><div class="feature-icon">🎓</div><h3>Student management</h3><p>Keep student profiles, enrolments and academic details organised in one place.</p></article>
+          <article class="feature-card"><div class="feature-icon">👩‍🏫</div><h3>Teacher management</h3><p>Bring teacher information, subjects and class responsibilities together.</p></article>
+          <article class="feature-card"><div class="feature-icon">🏫</div><h3>Class & batch management</h3><p>Plan classes, sessions and batches around the way your institute works.</p></article>
+          <article class="feature-card"><div class="feature-icon">📚</div><h3>Courses & syllabus</h3><p>Organise courses, subjects, chapters and topics for a clearer learning journey.</p></article>
+          <article class="feature-card"><div class="feature-icon">💳</div><h3>Fee management</h3><p>Keep fee structures and student fee information easier to manage.</p></article>
+          <article class="feature-card"><div class="feature-icon">📝</div><h3>Assignments & exams</h3><p>Support teaching with tools for assignments and assessments.</p></article>
         </div>
       </div>
     </section>
 
     <section class="cta" id="contact">
       <div class="container cta-inner">
-        <div><h2>Ready to make institute management simpler?</h2><p>Get in touch with Dolphin Classes to learn more.</p></div>
+        <div><h2>Want to know when Dolphin Classes launches?</h2><p>We’re still building the app. Send us a note and we’ll be happy to share updates as we get closer to launch.</p></div>
         <div class="hero-actions">
-          <a class="btn" href="mailto:dolphinclasses7@gmail.com">dolphinclasses7@gmail.com</a>
+          <a class="btn" href="mailto:dolphinclasses7@gmail.com?subject=Dolphin%20Classes%20launch%20updates">Email us <span>→</span></a>
         </div>
       </div>
     </section>
